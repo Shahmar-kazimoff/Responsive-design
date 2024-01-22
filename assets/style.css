@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: 'BRUSHSCI';
+    src: url('./BRUSHSCI.TTF') format('truetype');
+}
+
+.navbar {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+    background-position-y: -40px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: #FED136;
+    font-family: "BRUSHSCI";
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.long-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.burger-border {
+    gap: 10px;
+    color: #9B9D9E;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+.fa-solid .fa-bars {
+    display: none;
+}
+
+.short-menu {
+    background-color: #222126;
+    height: 210px;
+    width: 100vw;
+    margin-left: 50px;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    font-size: 15px;
+    font-weight: 600;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+.burger-menu:hover .short-menu {
+    display: block;
+}
+
+.section-first {
+    height: 700px;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -90px;
+    text-align: center;
+}
+
+button {
+    padding: 30px 60px;
+    border-radius: 10px;
+    background-color: #FFC800;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 71px;
+    padding: 40px 0;
+}
+
+.section-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    color: black;
+    font-size: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 97vw;
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    gap: 50px;
+}
+
+.section-second-icon {
+    background-color: #FFC800;
+    padding: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 70px;
+    height: 85px;
+}
+
+.icon-title {
+    color: black;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.icon-text {
+    color: #847C7D;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.section-third {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards .card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    position: relative;
+}
+
+
+.card1 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/1.jpg);
+}
+
+.card2 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/2.jpg);
+}
+
+.card3 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/3.jpg);
+}
+
+.card4 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/4.jpg);
+}
+
+.card5 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/5.jpg);
+}
+
+.card6 {
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/6.jpg);
+}
+
+.card1-hover,
+.card2-hover,
+.card3-hover,
+.card4-hover,
+.card5-hover,
+.card6-hover {
+    height: 300px;
+    width: 400px;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1:hover .card1-hover,
+.card2:hover .card2-hover,
+.card3:hover .card3-hover,
+.card4:hover .card4-hover,
+.card5:hover .card5-hover,
+.card6:hover .card6-hover {
+    background-color: #FED136;
+    opacity: 0.9;
+    transition: 500ms;
+}
+
+span {
+    display: none;
+}
+
+.card1 :hover span,
+.card2 :hover span,
+.card3 :hover span,
+.card4 :hover span,
+.card5 :hover span,
+.card6 :hover span {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .burger-border {
+        display: block;
+        border: 1px solid white;
+    }
+
+    span {
+        display: block;
+    }
+
+    .long-menu {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+}
